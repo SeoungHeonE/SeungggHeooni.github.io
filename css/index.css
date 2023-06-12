@@ -1,0 +1,1733 @@
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+
+}
+
+/********************************************************
+                        Top 버튼
+********************************************************/
+#scroll-btn {
+    cursor: pointer;
+    opacity: 0;
+    width: 60px;
+    height: 60px;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 10px #6d6d6d59;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    font-family: 'Noto Sans KR', sans-serif;
+    transition: background-color 0.5s, opacity 0.5s, transform 0.5s;
+}
+
+#scroll-btn:hover {
+    color: #fff;
+    background-color: #FAA56E;
+    border: 1px solid #fff;
+}
+
+#scroll-btn.show {
+    opacity: 1;
+    transition: background-color 0.5s, opacity 1s, transform 1s;
+}
+
+/********************************************************
+                        header
+********************************************************/
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+
+    background: #ffffff;
+    transition: top .5s;
+}
+
+#header-Wrap {
+    position: relative;
+    top: 25%;
+}
+
+#header-Wrap img {
+    position: absolute;
+
+    width: 100px;
+    left: 10%;
+}
+
+#nav-menu {
+    position: absolute;
+    width: 700px;
+    height: 20.13px;
+    right: 100px;
+
+    display: flex;
+}
+
+#nav-menu li {
+    padding: 5px 40px 0 40px;
+
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#nav-menu li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#nav-menu li a:hover {
+    color: #FAA56E !important;
+    transition: all 0.3s;
+}
+
+/********************************************************
+                section 1 시나브로 목업
+********************************************************/
+
+#section {
+    width: 100%;
+    height: 960.5px;
+    background-color: #FAA56E;
+}
+
+#Sinabro-main {
+    position: relative;
+}
+
+#Sinabro-main>img {
+    position: absolute;
+    width: 1020px;
+    top: 0;
+    right: 0;
+}
+
+#slogan {
+    position: absolute;
+    width: 784.01px;
+    height: 44px;
+    left: 10%;
+    top: 354px;
+
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+#slogan .Sinabro_Logo {
+    width: 350px;
+    margin-top: 30px;
+    /* left: 0; */
+}
+
+#Download-image {
+    position: absolute;
+    top: 220px;
+}
+
+#Download-image>a>img {
+    width: 42%;
+}
+
+.download-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.download-icon:hover {
+    transform: scale(.95);
+}
+
+.active {
+    display: none;
+}
+
+#Download-image img:nth-of-type(1) {
+    padding: 0 30px 0 0;
+}
+
+/********************************************************
+                section 2 서비스명 소개
+********************************************************/
+
+#section2 {
+    width: 100%;
+    height: 727px;
+    background-color: #fdfdfd;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#service_name {
+    position: relative;
+    text-align: center;
+}
+
+#service_name .Sinabro_Logo2 {
+    /* position: absolute; */
+    width: 360px;
+    margin-top: 210px;
+}
+
+#service_name .naming {
+    position: absolute;
+    width: 100%;
+    height: 66px;
+    top: 390px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Gothic A1', sans-serif;
+    line-height: 1.5;
+}
+
+#service_name .naming p {
+    position: absolute;
+    width: 100%;
+    height: 66px;
+    top: 90px;
+    line-height: 1.5;
+}
+
+/********************************************************
+                section 3 OVER VIEW
+********************************************************/
+
+#section3 {
+    width: 100%;
+    height: 1850px;
+    background: #fdfdfd;
+    /* position: relative; */
+}
+
+#section3_bg {
+    width: 100%;
+    height: 1750px;
+    background: #fff;
+    border-radius: 0px 0px 200px 200px;
+    box-shadow: 0px 20px 89px -44px rgba(0, 0, 0, 0.25);
+}
+
+#OverView {
+    width: 100%;
+    top: 300px;
+    position: relative;
+}
+
+#solid {
+    position: absolute;
+    height: 0;
+    top: -100px;
+    /* 맨 위로 위치 조정 */
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #000000;
+    transition: height 0.5s ease;
+}
+
+
+#OverView #view {
+    position: absolute;
+    width: 100%;
+    height: 44px;
+    top: 260px;
+    left: 0;
+    text-align: center;
+
+    font-size: 24px;
+    /* font-weight: bold; */
+    font-family: 'Cafe24Ssurround';
+    color: #FAA56E;
+
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+
+#OverView #service_description {
+    position: absolute;
+    width: 100%;
+    height: 44px;
+    top: 380px;
+    left: 0;
+    text-align: center;
+
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    font-family: 'Gothic A1', sans-serif;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+
+
+#OverView>#service_description>span {
+    font-size: 18px;
+    line-height: 4;
+}
+
+#comma {
+    position: absolute;
+    width: 600px;
+    margin-top: 600px;
+    margin-left: 160px;
+}
+
+#card {
+    position: absolute;
+    width: 100%;
+    margin-top: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card .img {
+    width: 25%;
+    padding: 0 30px 0 30px;
+    transition: opacity 0.5s;
+}
+
+/********************************************************
+                        section 4
+********************************************************/
+
+#section4 {
+    width: 100%;
+    height: 1080px;
+    background-color: #fdfdfd;
+}
+
+/********************************************************
+                    section 4 persona
+********************************************************/
+#persona {
+    position: relative;
+    width: 100%;
+    top: 120px;
+    left: 0;
+
+    text-align: center;
+}
+
+#persona2 {
+    /* position: absolute; */
+    width: 100%;
+    height: 44px;
+    position: absolute;
+
+    font-size: 24px;
+    font-family: 'Cafe24Ssurround';
+    color: #FAA56E;
+
+    /* opacity: 0; */
+    transition: opacity 1s, transform 1s;
+}
+
+/* 트렌지션 */
+#Ellipse1 {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+
+#Ellipse2 {
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+
+/* 이모지 */
+#persona #Ellipse1 span img {
+    width: 140px;
+    margin-top: 18px;
+}
+
+#persona #Ellipse2 span img {
+    width: 140px;
+    margin: 10px 0 0 10px;
+}
+
+/* 원1 */
+#persona #Ellipse1 #one {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 200px;
+    left: 20%;
+
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* 사각1 */
+#persona #Ellipse1 #two {
+    position: absolute;
+    width: 600px;
+    height: 180px;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-radius: 19px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.scenario {
+    margin-left: 0;
+}
+
+/* 이름, 시나리오 */
+#persona #Ellipse1 .scenario p {
+    position: absolute;
+    width: 100%;
+    top: 34px;
+
+    /* text-align: left; */
+    line-height: 2;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+#persona #Ellipse1 .scenario p:nth-of-type(1)>span {
+    margin-left: 3px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#persona #Ellipse1 .scenario p:nth-of-type(2) {
+    top: 90px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+
+/* 원2 */
+#persona #Ellipse2 #three {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 500px;
+    right: 20%;
+
+
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* 사각2 */
+#persona #Ellipse2 #four {
+    position: absolute;
+    width: 600px;
+    height: 180px;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-radius: 19px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* 이름, 시나리오 */
+#persona #Ellipse2 .scenario2 p {
+    position: absolute;
+    width: 100%;
+    top: 34px;
+
+    /* text-align: left; */
+    line-height: 2;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+#persona #Ellipse2 .scenario2 p:nth-of-type(1)>span {
+    margin-left: 3px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+#persona #Ellipse2 .scenario2 p:nth-of-type(2) {
+    top: 90px;
+
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+/********************************************************
+                    section 5 video
+********************************************************/
+#section5 {
+    width: 100%;
+    height: 1834px;
+    color: #fff;
+    background-color: #FAA56E;
+}
+
+#introduction_video {
+    position: relative;
+    width: 100%;
+    top: 0;
+    text-align: center;
+}
+
+#introduction_video h1 {
+    position: absolute;
+    width: 100%;
+    height: 44px;
+    top: 350px;
+    left: 0;
+
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Cafe24Ssurround';
+}
+
+#introduction_video>.video_box {
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.video {
+    position: absolute;
+    padding: 30px;
+    border: solid 2px #fff;
+    border-radius: 20px;
+}
+
+/********************************************************
+                    section 6 service
+********************************************************/
+#section6 {
+    width: 100%;
+    height: 2000px;
+    background-color: #fdfdfd;
+
+    text-align: center;
+}
+
+#section6_bg {
+    width: 100%;
+    height: 1950px;
+    background: #fff;
+    border-radius: 0px 0px 200px 200px;
+    box-shadow: 0px 20px 89px -44px rgba(0, 0, 0, 0.25);
+}
+
+#iphone {
+    position: relative;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.service_img {
+    position: absolute;
+    width: 1140px;
+    margin-top: -128.5px;
+
+}
+
+.logo_iphone {
+    position: absolute;
+    margin-top: -300px;
+    width: 300px;
+}
+
+#onboarding_text {
+    position: relative;
+    top: 38%;
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+
+    color: #000000;
+}
+
+#onboarding_text p {
+    margin-top: 40px;
+
+    font-family: 'Gothic A1';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    color: #030303;
+}
+
+#onboarding_text p>span {
+    font-weight: 700;
+}
+
+.orange {
+    position: absolute;
+    top: 8px;
+    left: 42.6%;
+}
+
+#onboarding {
+    position: relative;
+    width: 100%;
+    top: 44%;
+
+    display: flex;
+    justify-content: center
+}
+
+#onboarding p {
+    position: absolute;
+    top: 650px;
+
+    font-family: 'Gothic A1';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    color: #030303;
+}
+
+/********************************************************
+                section 7 main_page
+********************************************************/
+#section7 {
+    width: 100%;
+    height: 1150px;
+    background-color: #fdfdfd;
+}
+
+#main_page {
+    position: relative;
+    top: 200px;
+    left: 113px;
+}
+
+#main_text {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+
+    color: #000000;
+}
+
+#main_text h1 {
+    margin-left: 18px;
+}
+
+#main_text p:nth-of-type(1) {
+    margin-top: 40px;
+    margin-left: 18px;
+
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 150%;
+}
+
+#main_text p:nth-of-type(2) {
+    margin-top: 40px;
+    margin-left: 18px;
+
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #2B2B2B;
+}
+
+.orange2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 6px;
+}
+
+/* img */
+#main_img {
+    position: relative;
+    width: 100%;
+    top: 304px;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+#main_img>img {
+    width: 1560px;
+}
+
+
+/********************************************************
+                section 8 TODAY KEYWORD
+********************************************************/
+#section8 {
+    width: 100%;
+    height: 1450px;
+    background-color: #ffffff;
+}
+
+#keyword {
+    position: relative;
+    top: 170px;
+    left: 113px;
+}
+
+#keyword_text {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+
+    color: #000000;
+}
+
+#keyword_text h1 {
+    margin-left: 18px;
+}
+
+#keyword_text p:nth-of-type(1) {
+    margin-top: 40px;
+    margin-left: 18px;
+
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 150%;
+}
+
+#keyword_text p:nth-of-type(2) {
+    margin-top: 40px;
+    margin-left: 18px;
+
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #2B2B2B;
+}
+
+.orange3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 6px;
+}
+
+/* img */
+#keyword_img {
+    position: relative;
+    width: 100%;
+    top: 430px;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+#keyword_img img {
+    width: 1420px;
+}
+
+/********************************************************
+                section 9 TODAY KEYWORD
+********************************************************/
+#section9 {
+    width: 100%;
+    height: 1200px;
+    background-color: #FAA56E;
+
+    position: relative;
+}
+
+.white2 {
+    position: absolute;
+    left: 0;
+    top: 240px;
+    margin-top: 6px;
+}
+
+#ranking {
+    position: relative;
+    top: 170px;
+    left: 113px;
+}
+
+#ranking_text {
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+
+    color: #000000;
+}
+
+#ranking_text h1 {
+    margin-left: 18px;
+}
+
+#ranking_text p:nth-of-type(1) {
+    margin-top: 40px;
+    margin-left: 18px;
+
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 150%;
+}
+
+#ranking_text p:nth-of-type(2) {
+    margin-top: 40px;
+    margin-left: 18px;
+
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #2B2B2B;
+}
+
+.white {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 6px;
+}
+
+/* img */
+#ranking_img {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+#ranking_img img {
+    width: 1023px;
+    margin-top: -169.4px;
+    margin-left: 500px;
+}
+
+
+/********************************************************
+                section 10 Logo Desgin
+********************************************************/
+#section10 {
+    width: 100%;
+    height: 742px;
+    background-color: #fdfdfd;
+}
+
+#LogoDesgin {
+    position: relative;
+    width: 100%;
+    /* top: 0;
+    left: 0; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+
+#LogoDesgin h1 {
+    position: absolute;
+    margin-top: 120px;
+
+    font-family: 'Cafe24 Ssurround';
+    font-size: 28px;
+
+    color: #FAA56E;
+}
+
+#LogoDesgin img {
+    position: absolute;
+    width: 732px;
+    margin-top: 570px;
+}
+
+#LogoDesgin p {
+    position: absolute;
+    margin-top: 1000px;
+
+    font-family: 'Gothic A1';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/********************************************************
+                section 11 Desgin
+********************************************************/
+#section11 {
+    width: 100%;
+    height: 2600px;
+    background-color: #fff;
+}
+
+#concept {
+    position: relative;
+    width: 100%;
+    /* top: 0;
+    left: 0; */
+
+    text-align: center
+}
+
+.Desgin_keyword {
+    width: 100%;
+    margin-top: 0;
+}
+
+.Desgin_keyword_text {
+    position: relative;
+    top: 170px;
+    left: 113px;
+}
+
+#concept .Desgin_keyword_text h1 {
+    position: absolute;
+    margin-left: 18px;
+
+    font-family: 'Noto Sans';
+    /* font-style: normal; */
+    font-weight: 600;
+    font-size: 32px;
+    /* line-height: 49px; */
+}
+
+.orange4 {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#concept #keyword_setting img {
+    width: 915px;
+    margin-top: 380px;
+}
+
+#concept #keyword_setting p:nth-of-type(1) {
+    margin-top: 100px;
+    font-family: 'Noto Sans';
+    /* font-style: normal; */
+    font-weight: 500;
+    font-size: 18px;
+    /* line-height: 33px; */
+}
+
+#concept #keyword_setting p:nth-of-type(2) {
+    margin-top: 30px;
+    font-family: 'Gothic A1';
+    /* font-style: normal; */
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+
+/* color */
+.Desgin_color {
+    width: 100%;
+    margin-top: 0;
+}
+
+#concept .Desgin_color_text {
+    position: relative;
+    top: 170px;
+    left: 113px;
+}
+
+#concept .Desgin_color_text h1 {
+    position: absolute;
+    margin-left: 18px;
+
+    font-family: 'Noto Sans';
+    /* font-style: normal; */
+    font-weight: 600;
+    font-size: 32px;
+    /* line-height: 49px; */
+}
+
+#concept #color img {
+    width: 1327px;
+    margin-top: 344px;
+}
+
+/* font */
+.Desgin_font {
+    width: 100%;
+    margin-top: 0;
+}
+
+#concept .Desgin_font_text {
+    position: relative;
+    top: 170px;
+    left: 113px;
+}
+
+#concept .Desgin_font_text h1 {
+    position: absolute;
+    margin-left: 18px;
+
+    font-family: 'Noto Sans';
+    /* font-style: normal; */
+    font-weight: 600;
+    font-size: 32px;
+    /* line-height: 49px; */
+}
+
+#concept .Desgin_font_text .typeface {
+    margin-left: 70px;
+    color: #a8a8a8;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+#concept #font img {
+    width: 1302px;
+    margin-top: 380px;
+}
+
+/********************************************************
+                section 12 mock-up
+********************************************************/
+#section12 {
+    width: 100%;
+    height: 1318px;
+    background-image: url(../img/sub_mock_up.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #818181;
+}
+
+
+/********************************************************
+                section 13 team
+********************************************************/
+#section13 {
+    width: 100%;
+    height: 1000px;
+    background-color: #fff;
+}
+
+#team {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#team h1 {
+    font-family: 'Cafe24 Ssurround';
+    /* font-style: normal; */
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 57px;
+    /* identical to box height */
+    color: #FAA56E;
+}
+
+.member-wrap {
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+figure.member:hover .Clip {
+    display: block;
+}
+
+figure.member .Clip {
+    display: none;
+    position: absolute;
+    width: 70px;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+figure.member {
+    position: relative;
+    /* overflow: hidden; */
+    margin: 10px 40px 0 40px;
+    min-width: 230px;
+    max-width: 340px;
+    height: 390px;
+    width: 100%;
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Cafe24Ssurround';
+}
+
+figure.member * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+figure.member::after,
+figure.member figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+figure.member::after {
+    margin-top: -10px;
+    content: '';
+    background-color: rgb(255, 255, 255);
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+figure.member figcaption {
+    z-index: 1;
+    padding: 40px;
+}
+
+figure.member h3,
+figure.member .links {
+    width: 100%;
+    margin: 5px 0;
+    padding: 0;
+}
+
+figure.member h3 {
+    line-height: 2.2;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+figure.member p {
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    opacity: 0;
+    top: 50%;
+    font-family: 'Gothic A1', sans-serif;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+}
+
+figure.member:hover img {
+    zoom: 1;
+    filter: alpha(opacity=100);
+    -webkit-opacity: 0.5;
+    opacity: 0.5;
+}
+
+figure.member:hover::after {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+figure.member:hover h3,
+figure.member:hover p {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+
+
+
+/********************************************************
+                        footer
+********************************************************/
+#footer {
+    width: 100%;
+    height: 120px;
+    background-color: #FAA56E;
+}
+
+#footer #footer_logo {
+    position: relative;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/********************************************************
+                    min-width: 390px
+********************************************************/
+@media all and (min-width: 390px) {
+    body {
+        width: 100%;
+    }
+
+    #nav-menu {
+        width: 700px;
+        height: 20.13px;
+        right: 20px;
+    }
+
+    #nav-menu li {
+        font-size: 17px;
+    }
+
+    /* section1 */
+    #slogan {
+        left: 10%;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    #slogan .Sinabro_Logo {
+        width: 250px;
+    }
+
+    #Download-image {
+        top: 180px;
+    }
+
+    #Download-image>a>img {
+        width: 36%;
+    }
+
+    /* section3 */
+    #card .img {
+        width: 30%;
+        padding: 0 30px 0 30px;
+    }
+
+    #comma {
+        width: 500px;
+    }
+
+    /* section 4 persona */
+    /* 원1 */
+    #persona #Ellipse1 #one {
+        left: 10%;
+    }
+
+    /* 원2 */
+    #persona #Ellipse2 #three {
+        right: 10%;
+    }
+
+    /* section 6 service & onBoarding */
+    .orange {
+        position: absolute;
+        top: 8px;
+        left: 40%;
+    }
+
+    /* section7 main page */
+    #main_page {
+        left: 40px;
+    }
+
+    /* img */
+    #main_img {
+        top: 461px;
+    }
+
+    #main_img>img {
+        width: 1270px;
+    }
+
+
+    /* section 8 TODAY KEYWORD */
+    #keyword {
+        left: 40px;
+    }
+
+    /* img */
+    #keyword_img img {
+        width: 1220px;
+    }
+
+
+    /* section 9 KEYWORD RANKING */
+    #ranking {
+        left: 40px;
+    }
+
+    #ranking_img img {
+        width: 923px;
+        margin-left: 420px;
+    }
+
+
+    /* section 10 LogoDesgin */
+    #LogoDesgin img {
+        width: 602px;
+    }
+
+    #LogoDesgin p {
+        font-size: 16px;
+    }
+
+
+    /* section 11 Desgin */
+    /* 이미지 위치 */
+    .Desgin_keyword {
+        margin-top: 0;
+    }
+
+    .Desgin_color {
+        margin-top: 120px;
+    }
+
+    .Desgin_font {
+        margin-top: 120px;
+    }
+
+
+    /* 텍스트 위치 */
+    .Desgin_keyword_text {
+        left: 40px;
+    }
+
+    #concept .Desgin_color_text {
+        left: 40px;
+    }
+
+    #concept .Desgin_font_text {
+        left: 40px;
+    }
+
+
+    /* img */
+    #concept #keyword_setting img {
+        width: 715px;
+    }
+
+    #concept #color img {
+        width: 1127px;
+    }
+
+    #concept #font img {
+        width: 1102px;
+    }
+
+
+    /* footer */
+    #footer #footer_logo {
+        position: relative;
+        left: 8%;
+    }
+}
+
+
+/********************************************************
+                    min-width: 1440px
+********************************************************/
+@media all and (min-width: 1440px) {
+    body {
+        width: 100%;
+    }
+
+    #nav-menu {
+        width: 700px;
+        height: 20.13px;
+        right: 100px;
+    }
+
+    #nav-menu li {
+        font-size: 18px;
+    }
+
+    /* section1 */
+    #slogan {
+        left: 10%;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    #slogan .Sinabro_Logo {
+        width: 350px;
+    }
+
+    #Download-image {
+        top: 220px;
+    }
+
+    #Download-image>a>img {
+        width: 42%;
+    }
+
+    /* section3 */
+    #card .img {
+        width: 25%;
+        padding: 0 30px 0 30px;
+    }
+
+    #comma {
+        width: 550px;
+    }
+
+    /* section 4 persona */
+    /* 원1 */
+    #persona #Ellipse1 #one {
+        left: 10%;
+    }
+
+    /* 원2 */
+    #persona #Ellipse2 #three {
+        right: 10%;
+    }
+
+    /* section 6 service & onBoarding */
+    .orange {
+        position: absolute;
+        top: 8px;
+        left: 41%;
+    }
+
+    /* section7 main page */
+    #main_page {
+        left: 80px;
+    }
+
+    /* img */
+    #main_img {
+        top: 391px;
+    }
+
+    #main_img>img {
+        width: 1400px;
+    }
+
+    /* section 8 TODAY KEYWORD */
+    #keyword {
+        left: 80px;
+    }
+
+    /* img */
+    #keyword_img img {
+        width: 1420px;
+    }
+
+
+    /* section 9 KEYWORD RANKING */
+    #ranking {
+        left: 80px;
+    }
+
+    #ranking_img img {
+        width: 923px;
+        margin-left: 400px;
+    }
+
+    /* section 10 LogoDesgin */
+    #LogoDesgin img {
+        width: 682px;
+    }
+
+    #LogoDesgin p {
+        font-size: 18px;
+    }
+
+
+    /* section 11 Desgin */
+    /* 이미지 위치 */
+    .Desgin_keyword {
+        margin-top: 0;
+    }
+
+    .Desgin_color {
+        margin-top: 80px;
+    }
+
+    .Desgin_font {
+        margin-top: 80px;
+    }
+
+    /* 텍스트 위치 */
+    .Desgin_keyword_text {
+        left: 80px;
+    }
+
+    #concept .Desgin_color_text {
+        left: 80px;
+    }
+
+    #concept .Desgin_font_text {
+        left: 80px;
+    }
+
+    /* img */
+    #concept #keyword_setting img {
+        width: 815px;
+    }
+
+    #concept #color img {
+        width: 1127px;
+    }
+
+    #concept #font img {
+        width: 1102px;
+    }
+
+
+    /* footer */
+    #footer #footer_logo {
+        left: 10%;
+    }
+}
+
+
+/********************************************************
+                    min-width: 1620px
+********************************************************/
+@media all and (min-width: 1620px) {
+    body {
+        width: 100%;
+    }
+
+    #nav-menu {
+        width: 700px;
+        height: 20.13px;
+        right: 100px;
+    }
+
+    #nav-menu li {
+        font-size: 18px;
+    }
+
+    /* section1 */
+    #slogan {
+        left: 10%;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    #slogan .Sinabro_Logo {
+        width: 350px;
+    }
+
+    #Download-image {
+        top: 220px;
+    }
+
+    #Download-image>a>img {
+        width: 42%;
+    }
+
+
+    /* section3 */
+    #card .img {
+        width: 25%;
+        padding: 0 30px 0 30px;
+    }
+
+    #comma {
+        width: 600px;
+    }
+
+
+    /* section 4 persona */
+    /* 원1 */
+    #persona #Ellipse1 #one {
+        left: 20%;
+    }
+
+    /* 원2 */
+    #persona #Ellipse2 #three {
+        right: 20%;
+    }
+
+    /* section 6 service & onBoarding */
+    .orange {
+        position: absolute;
+        top: 8px;
+        left: 42.6%;
+    }
+
+    /* section7 main page */
+    #main_page {
+        left: 113px;
+    }
+
+    /* img */
+    #main_img {
+        top: 304px;
+    }
+
+    #main_img>img {
+        width: 1560px;
+    }
+
+    /* section 8 TODAY KEYWORD */
+    #keyword {
+        left: 113px;
+    }
+
+    /* img */
+    #keyword_img img {
+        width: 1420px;
+    }
+
+
+    /* section 9 KEYWORD RANKING */
+    #ranking {
+        left: 113px;
+    }
+
+    #ranking_img img {
+        width: 1023px;
+        margin-left: 500px;
+    }
+
+    /* section 10 LogoDesgin */
+    #LogoDesgin img {
+        width: 732px;
+    }
+
+
+    /* section 11 Desgin */
+    /* 이미지 위치 */
+    .Desgin_keyword {
+        margin-top: 0;
+    }
+
+    .Desgin_color {
+        margin-top: 0;
+    }
+
+    .Desgin_font {
+        margin-top: 0;
+    }
+
+    /* 텍스트 위치 */
+    .Desgin_keyword_text {
+        left: 113px;
+    }
+
+    #concept .Desgin_color_text {
+        left: 113px;
+    }
+
+    #concept .Desgin_font_text {
+        left: 113px;
+    }
+
+    /* img */
+    #concept #keyword_setting img {
+        width: 915px;
+    }
+
+    #concept #color img {
+        width: 1327px;
+    }
+
+    #concept #font img {
+        width: 1302px;
+    }
+
+    /* footer */
+    #footer #footer_logo {
+        left: 10%;
+    }
+}
+
+
+
+
+/********************************************************
+                    font Noto Sans
+********************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+/* font-family: 'Noto Sans', sans-serif; */
+
+
+/********************************************************
+                font Noto Sans korea
+********************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+
+/********************************************************
+                    font Gothic A1
+********************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+/* font-family: 'Gothic A1', sans-serif; */
+
+
+/********************************************************
+                    font Gothic A1
+********************************************************/
+
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
